@@ -8,11 +8,9 @@
   <title>RE:VERSE — 다시 듣고, 새롭게 남기다</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23dfebd7'/%3E%3Cpath d='M21 18v28M32 12v40M43 22v20' stroke='%232f4b36' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="friends.css">
-  <script src="ui.js" defer></script>
-  <script src="home.js" defer></script>
-  <script src="friends.js" defer></script>
+  <link rel="stylesheet" href="ai.css">
+  <script src="data.js" defer></script>
+  <script src="ai.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,11 +18,11 @@
   <header class="site-header">
     <div class="header-inner"><a href="#home" class="reverse-brand" aria-label="RE:VERSE 홈">RE<span>:</span>VERSE<small>EVERY VERSE HAS ANOTHER STORY</small></a>
     <nav id="navigation" aria-label="주 메뉴"></nav>
-    <a class="user-button" href="#account" aria-label="내 계정"><span class="avatar mine" aria-hidden="true">나</span><span id="profile-name">음악 산책자</span></a></div>
+    <button class="user-button" data-action="profile"><span class="avatar mine">나</span><span id="profile-name">음악 산책자</span></button></div>
   </header>
   <div class="workspace">
     <main id="main" tabindex="-1"></main>
-    <footer><span>RE:VERSE <span class="footer-muted">YOUR THOUGHTS BETWEEN THE LYRICS</span></span><button class="demo-badge" data-action="about">서비스 안내</button></footer>
+    <footer><span>RE:VERSE <span class="footer-muted">YOUR THOUGHTS BETWEEN THE LYRICS</span></span><button class="demo-badge" data-action="about">프론트엔드 프로토타입 · 안내</button><p class="footer-sources">추천 노래와 아티스트는 <a href="https://musicbrainz.org" target="_blank" rel="noopener noreferrer">MusicBrainz</a>, 가사는 <a href="https://lrclib.net" target="_blank" rel="noopener noreferrer">LRCLIB</a>에서 불러와요. 추천된 곡에도 별점과 코멘트를 남길 수 있어요.</p></footer>
   </div>
   <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
